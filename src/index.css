@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-900: #0f172a;
+  --emerald-400: #34d399;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-overlay {
+  background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9));
+}
+
+.nav-link {
+  @apply text-gray-300 hover:text-emerald-400 transition-colors;
+}
+
+.nav-link.active {
+  @apply text-emerald-400;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
